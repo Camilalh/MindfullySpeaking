@@ -52,6 +52,13 @@ body {
     justify-content: center;
 }
 
+.card-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 150%;
+}
+
 /* rtl:end:ignore */
 
 /* Featurettes
