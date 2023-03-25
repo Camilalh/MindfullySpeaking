@@ -27,6 +27,7 @@ body {
 }
 
 .carousel-item .btn-primary {
+    margin-top: 100px;
 }
 
 /* MARKETING CONTENT
@@ -35,6 +36,7 @@ body {
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
     text-align: center;
+    margin-top: 100px;
     justify-content: center;
 }
 /* rtl:begin:ignore */
@@ -46,6 +48,7 @@ body {
 
 .marketing .btn-secondary {
     background-color: #0ac69c;
+    margin-top: 100px;
     justify-content: center;
 }
 
