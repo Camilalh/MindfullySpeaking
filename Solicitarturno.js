@@ -149,6 +149,9 @@ function respuestaClick() {
             alert("Usted ingresó una opción inexistente");
             break;
     }
+    //GUARDADO DE DATOS EN JSON
+    let datosDeTurno = { nombre, dni, nombreProfesional: arrayDeProfesionales[numeroIngresado - 1].nombre };
+    localStorage.setItem("datosDeTurno", JSON.stringify(datosDeTurno));
 }
 
 datosDelPaciente();
