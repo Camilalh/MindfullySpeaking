@@ -155,3 +155,4 @@ function respuestaClick() {
 }
 
 datosDelPaciente();
+respuestaClick();

@@ -11,3 +11,5 @@ turnosArray.push(turnoSolicitado);
 let datosDeTurno = { nombre, dni, nombreProfesional: arrayDeProfesionales[numeroIngresado - 1].nombre };
 turnosArray.push(datosDeTurno);
 localStorage.setItem("datosDeTurno", JSON.stringify(turnosArray));
+
+window.location.href = "MisTurnos.html";
