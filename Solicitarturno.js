@@ -152,6 +152,25 @@ function respuestaClick() {
     //GUARDADO DE DATOS EN JSON
     let datosDeTurno = { nombre, dni, nombreProfesional: arrayDeProfesionales[numeroIngresado - 1].nombre };
     localStorage.setItem("datosDeTurno", JSON.stringify(datosDeTurno));
+
+    function mostrarResultados(resultados) {
+        const contenedorResultados = document.getElementById("resultados");
+
+        const titulo = document.createElement("h2");
+        titulo.textContent = "Turno asignado:";
+        contenedorResultados.appendChild(titulo);
+
+        let parrafo = document.createElement("div"); //me estaba faltando esto.
+        arrayDeProfesionales.map((profesional) => {
+            return (parrafo.innerHTML = `
+                <strong>Profesional:${profesional.nombre}</strong><br>
+                <strong>Especialidad:${profesional.especialidad}</strong>
+                <strong>Día y horario:</strong>
+                `);
+        });
+        contenedorResultados.appendChild(parrafo);
+    }
+    mostrarResultados(resultados);
 }
 
 datosDelPaciente();
