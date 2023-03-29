@@ -168,6 +168,7 @@ function respuestaClick() {
                 <strong>Día y horario:</strong>
                 `);
         });
+
         contenedorResultados.appendChild(parrafo);
     }
     mostrarResultados(resultados);
