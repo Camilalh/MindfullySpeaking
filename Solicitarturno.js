@@ -160,16 +160,23 @@ function respuestaClick() {
         titulo.textContent = "Turno asignado:";
         contenedorResultados.appendChild(titulo);
 
-        let parrafo = document.createElement("div"); //me estaba faltando esto.
+        let parrafo1 = document.createElement("div"); //me estaba faltando esto.
         arrayDeProfesionales.map((profesional) => {
-            return (parrafo.innerHTML = `
+            return (parrafo1.innerHTML = `
                 <strong>Profesional:${profesional.nombre}</strong><br>
-                <strong>Especialidad:${profesional.especialidad}</strong>
-                <strong>Día y horario:</strong>
+                <strong>Especialidad:${profesional.especialidad}</strong><br>
+                `);
+        });
+        let parrafo2 = document.createElement("div"); //me estaba faltando esto.
+        arrayDeTurnos.map((turno) => {
+            return (parrafo2.innerHTML = `
+                <strong>Dia:${turno.dia}</strong><br>
+                <strong>Horario:${turno.horario}</strong><br>
                 `);
         });
 
-        contenedorResultados.appendChild(parrafo);
+        contenedorResultados.appendChild(parrafo1);
+        contenedorResultados.appendChild(parrafo2);
     }
     mostrarResultados(resultados);
 }
