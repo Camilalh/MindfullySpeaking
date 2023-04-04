@@ -15,12 +15,23 @@ function respuestaClick() {
     arrayDeProfesionales = [new Profesionales("Catalina Lopez", 24, "Psicoanálisis", "OSEP,OSDE,GALENO", 2500), new Profesionales("Camila Las Heras", 40, "Psicologia del deporte", "OSDE", 3000), new Profesionales("Emiliano Las Heras", 35, "Psicologia cognitiva", "Swiss medical", 1500), new Profesionales("Ana Carolina Puerta", 30, "Psicologia de la salud", "Hospital Español", 1800), new Profesionales("Leticia Puerta", 80, "Terapia Cognitivo Conductual", "Particular", 5000)];
     console.log(arrayDeProfesionales);
     mensaje = ""; //el alert empieza vacio y luego se completa con todos los elementos
+    //APLICACIÓN DE DESTRUCTURACIÓN
     arrayDeProfesionales.forEach((persona) => {
-        mensaje += `Nombre: ${persona.nombre}\n`;
-        mensaje += `Edad: ${persona.edad}\n`;
-        mensaje += `Especialidad: ${persona.especialidad}\n`;
-        mensaje += `Obra Social: ${persona.obraSocial}\n\n`; //salto de linea
+        const { nombre } = persona;
+        mensaje += `Nombre: ${nombre}\n`;
+        const { edad } = persona;
+        mensaje += `Edad: ${edad}\n`;
+        const { especialidad } = persona;
+        mensaje += `Especialidad: ${especialidad}\n`;
+        const { obraSocial } = persona;
+        mensaje += `Obra Social: ${obraSocial}\n\n`;
     });
+
+    // const usuario = {
+    //     nombre: "Camila",
+    //     edad: 32,
+    // };
+    // const { nombre, edad } = usuario;
 
     alert(mensaje); //Aca la variable ya tiene todos los objetos agregados.
 
