@@ -151,7 +151,10 @@ function respuestaClick() {
     }
     //GUARDADO DE DATOS EN JSON
     let datosDeTurno = { nombre, dni, nombreProfesional: arrayDeProfesionales[numeroIngresado - 1].nombre };
-    localStorage.setItem("datosDeTurno", JSON.stringify(datosDeTurno));
+    turnosCargados = localStorage.getItem("datosDeTurno"); //Traigo turnos cargados en el local y lo guardo en la variable turnoCargados
+    turnosCargados = JSON.parse(turnosCargados);
+    turnosCargados.push(datosDeTurno); // se guarda el turno que acabo de crear a los turnos que ya estaban creados
+    localStorage.setItem("datosDeTurno", JSON.stringify(turnosCargados));
 
     function mostrarResultados(resultados) {
         const contenedorResultados = document.getElementById("resultados");
