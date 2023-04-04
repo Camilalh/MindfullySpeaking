@@ -39,28 +39,21 @@ function respuestaClick() {
             mensajeFiltrado += `Especialidad: ${persona.especialidad}\n`;
             mensajeFiltrado += `Obra Social: ${persona.obraSocial}\n\n`;
         });
-
-        if (mensajeFiltrado != "") {
-            alert(`Profesionales encontrados:\n${mensajeFiltrado}`);
-        } else {
-            alert("No se encontraron profesionales que coincidan con la búsqueda.");
-        }
+        //APLICACIÓN DE OPERADOR TERNARIO
+        mensajeFiltrado != "" ? alert(`Profesionales encontrados:\n${mensajeFiltrado}`) : alert("No se encontraron profesionales que coincidan con la búsqueda.");
     }
 
     //SELECCION DE PROFESIONAL
 
     function numeroInvalido(numeroIngresado) {
         console.log(numeroIngresado.length);
-        if (numeroIngresado.length == 1) {
-            return false; //para que siga el proceso, el valor está ok.
-        } else {
-            return true; //si el numero ingresado tiene mas de un digito, que ejecute el DO de nuevo.
-        }
+        //APLICACIÓN DE OPERADOR TERNARIO
+        return numeroIngresado.length == 1 ? false : true;
     }
     numeroIngresado = "";
     do {
         numeroIngresado = eleccionProfesional(); // en este caso la eleccion profesional se trata del numero que ingresó el paciente.
-    } while (numeroInvalido(numeroIngresado)); //chequeo del numero ingresado previamente.
+    } while (numeroInvalido(numeroIngresado) == false); //repito el bucle hasta que sea true
 
     function eleccionProfesional() {
         //declarar funcion
