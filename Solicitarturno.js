@@ -1,6 +1,8 @@
 let solicitarTurno = document.getElementById("btnSolicitarTurno");
 solicitarTurno.addEventListener("click", respuestaClick);
-console.log(solicitarTurno);
+function respuestaConocelos() {
+    window.location.href = "turnos.html";
+}
 function respuestaClick() {
     //Definicion de clase
     function Profesionales(nombre, edad, especialidad, obraSocial) {
@@ -26,12 +28,6 @@ function respuestaClick() {
         const { obraSocial } = persona;
         mensaje += `Obra Social: ${obraSocial}\n\n`;
     });
-
-    // const usuario = {
-    //     nombre: "Camila",
-    //     edad: 32,
-    // };
-    // const { nombre, edad } = usuario;
 
     alert(mensaje); //Aca la variable ya tiene todos los objetos agregados.
 
