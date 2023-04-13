@@ -12,14 +12,19 @@ document.addEventListener(
             var htmlObject = document.createElement("div"); // creo variable para pasar el string a HTML
             const infoTurno = ` <div class="card w-50">
         <div class="card-body">
-            <h5 class="card-title">${element.nombre}</h5>
-            <p class="card-text">${element.nombreProfesional}</p>
-            <a href="#" class="btn btn-primary">Button</a>
+        <h5 class="card-title">Turno asignado con: ${element.nombre}</h5>
+            <p class="card-text">Nombre del paciente: ${element.nombreProfesional}</p>
+            <a href="#" class="btn btn-primary" id="cancelar">Cancelar turno</a>
             </div>
         </div>`;
             htmlObject.innerHTML = infoTurno; // Convierte el string al HTML.
             contenedorTurno.append(htmlObject); //abro el contenedor para agregar dentro el card que cree anteriormente
         });
     },
-    false
+    false,
+    function cancelarTurno() {
+        let cancelar=getElementById("cancelar-turno")
+        cancelar.addEventListener("click",confirmacionDeCa)
+    }
+    function cancelarTurno
 );
