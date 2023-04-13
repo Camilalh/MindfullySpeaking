@@ -2,7 +2,7 @@ document.addEventListener(
     "DOMContentLoaded",
     function () {
         //TRAIGO JSON GUARDADO
-        let turnoSolicitado = localStorage.getItem("datosDeTurno");
+        let turnoSolicitado = localStorage.getItem("turnos");
         turnoSolicitado = JSON.parse(turnoSolicitado);
         console.log(turnoSolicitado);
         const contenedorTurno = document.getElementById("cards"); //busco el id cards en el HTML
