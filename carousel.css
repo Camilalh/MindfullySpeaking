@@ -23,7 +23,7 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-    height: 32rem;
+    height: 25rem;
 }
 
 .carousel-item .btn-primary {
@@ -65,16 +65,20 @@ body {
 /* Featurettes
 ------------------------- */
 
-.featurette-divider {
-    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
-}
+/* .featurette-divider {
+    margin: 5rem; 
+
+} */
 
 /* Thin out the marketing headings */
 /* rtl:begin:remove */
 .featurette-heading {
     letter-spacing: -0.05rem;
 }
-
+.centro-body {
+    margin-right: 50px;
+    margin-left: 50px;
+}
 /* rtl:end:remove */
 
 /* RESPONSIVE CSS
