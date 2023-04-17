@@ -13,7 +13,7 @@ body {
 
 /* Carousel base class */
 .carousel {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -27,7 +27,7 @@ body {
 }
 
 .carousel-item .btn-primary {
-    margin-top: 100px;
+    margin-top: 20px;
 }
 
 /* MARKETING CONTENT
@@ -49,7 +49,7 @@ body {
 
 .marketing .btn-secondary {
     background-color: #0ac69c;
-    margin-top: 100px;
+    margin-top: 50px;
     justify-content: center;
 }
 
