@@ -82,6 +82,13 @@ body {
 
 /* rtl:end:remove */
 
+/* form solicitar turno */
+.form-group {
+    width: 300px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 

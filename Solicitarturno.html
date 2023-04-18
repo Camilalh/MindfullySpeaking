@@ -95,11 +95,13 @@
             </nav>
         </header>
     <body>
-        <h1>Solicitar turno</h1>       
+        <div class="form-group">
+        <h1>Solicitar turno</h1>      
+        </div> 
         <form action="Solicitarturno.js" method="post" id="formularioTurnos" class="container">
             <div class="form-group">
-                <label for="nombre">Nombre completo:</label>
-                <input type="text" id="nombre" name="nombre" required class="form-control">
+                <label for="nombre" >Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required class="form-control" size="20">
             </div>
             <div class="form-group">
                 <label for="dni">DNI o pasaporte:</label>
@@ -112,8 +114,12 @@
             <div class="form-group">
                 <label for="obraSocial">Seleccione su obra social:</label>
                 <select id="obraSocial" name="obraSocial" class="form-control"></select>
+            <div class="form-group">
+                <br>
+                <input type="button" id="btnFormulario" value="Solicitar Turno" class="btn btn-primary">
             </div>
-            <input type="button" id="btnFormulario" value="Solicitar Turno" class="btn btn-primary">
+
+            </div>
         </form>
         <script src="Solicitarturno.js"></script>
 
