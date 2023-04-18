@@ -89,6 +89,13 @@ body {
     padding: 5px;
 }
 
+.titulo-formulario {
+    width: 300px;
+    margin: 40px auto;
+    padding: 5px;
+    text-align: center;
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
