@@ -1,0 +1,11 @@
+[
+    { "nombre": "Catalina Lopez", "edad": 24, "enfoquePsicologico": "Psicoanalisis", "idiomas": "Inglés, Español, Italiano" },
+    { "nombre": "Juan Barrera", "edad": 40, "enfoquePsicologico": "Terapia cognitivo conductual" },
+    { "nombre": "Emiliano Gonzalez", "edad": 35, "enfoquePsicologico": "Terapia sistémica breve" },
+    { "nombre": "Ana Carolina Contini", "edad": 45, "enfoquePsicologico": "Terapia neuropsicológica" },
+    { "nombre": "Leticia Contini", "edad": 50, "enfoquePsicologico": "Terapia Gestalt humanista" },
+    { "nombre": "Katherine Perez", "edad": 60, "enfoquePsicologico": "Terapia racional-emotiva-conductual TREC" },
+    { "nombre": "Cristian Martinez", "edad": 32, "enfoquePsicologico": "Terapia cognitiva" },
+    { "nombre": "Martín Robledo", "edad": 31, "enfoquePsicologico": "Terapia breve centrada en soluciones" },
+    { "nombre": "Martín Robledo", "edad": 31, "enfoquePsicologico": "Terapia breve centrada en soluciones" }
+]

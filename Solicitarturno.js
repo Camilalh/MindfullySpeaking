@@ -10,7 +10,7 @@ function Profesionales(nombre, edad, especialidad, obraSocial) {
     this.precioConsulta;
 }
 
-let arrayDeProfesionales = [new Profesionales("Catalina Lopez", 24, "Psicoanálisis", "GALENO", 2500), new Profesionales("Camila Las Heras", 40, "Psicologia del deporte", "OSDE", 3000), new Profesionales("Emiliano Las Heras", 35, "Psicologia cognitiva", "Swiss medical", 1500), new Profesionales("Ana Carolina Puerta", 30, "Psicologia de la salud", "Hospital Español", 1800), new Profesionales("Leticia Puerta", 80, "Terapia Cognitivo Conductual", "Particular", 5000)];
+let arrayDeProfesionales = [new Profesionales("Catalina Lopez", 24, "Psicoanálisis", "GALENO", 2500), new Profesionales("Juan Barrera", 40, "Psicologia del deporte", "OSDE", 3000), new Profesionales("Emiliano Gonzalez", 35, "Psicologia cognitiva", "Swiss medical", 1500), new Profesionales("Ana Carolina Contini", 30, "Psicologia de la salud", "Hospital Español", 1800), new Profesionales("Leticia Contini", 80, "Terapia Cognitivo Conductual", "Particular", 5000)];
 
 function procesarFormulario() {
     let nombrePaciente = document.getElementById("nombre");
