@@ -10,7 +10,7 @@ function Profesionales(nombre, edad, especialidad, obraSocial) {
     this.precioConsulta;
 }
 
-let arrayDeProfesionales = [new Profesionales("Catalina Lopez", 24, "Psicoanálisis", "GALENO", 2500), new Profesionales("Juan Barrera", 40, "Psicologia del deporte", "OSDE", 3000), new Profesionales("Emiliano Gonzalez", 35, "Psicologia cognitiva", "Swiss medical", 1500), new Profesionales("Ana Carolina Contini", 30, "Psicologia de la salud", "Hospital Español", 1800), new Profesionales("Leticia Contini", 80, "Terapia Cognitivo Conductual", "Particular", 5000)];
+let arrayDeProfesionales = [new Profesionales("Catalina Lopez", 24, "Psicoanálisis", "GALENO", 2500), new Profesionales("Juan Barrera", 40, "Terapia cognitivo conductual", "OSDE", 3000), new Profesionales("Emiliano Gonzalez", 35, "Terapia sistémica breve", "Swiss medical", 1500), new Profesionales("Ana Carolina Contini", 45, "Terapia neuropsicológica", "Hospital Español", 1800), new Profesionales("Leticia Contini", 50, "Terapia Gestalt humanista", "Particular", 5000), new Profesionales("Katherine Perez", 60, "Terapia racional-emotiva-conductual TREC", "Particular", 5000), new Profesionales("Cristian Martinez", 32, "Terapia cognitiva", "Particular", 5000), new Profesionales("Martín Robledo", 31, "Terapia breve centrada en soluciones", 5000)];
 
 function procesarFormulario() {
     let nombrePaciente = document.getElementById("nombre");
@@ -51,7 +51,6 @@ function procesarFormulario() {
 function armarFormulario() {
     let selectProfesional = document.getElementById("profesional");
     let selectObraSocial = document.getElementById("obraSocial");
-    console.log("armarFormulario");
     arrayDeProfesionales.forEach((profesional, key) => {
         const { nombre, obraSocial } = profesional;
 
