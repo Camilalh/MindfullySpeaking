@@ -36,15 +36,15 @@ function procesarFormulario() {
         });
         return;
     }
-    let esDNIValido = chequeoDNI(dniPaciente.value);
-    if (!esDNIValido) {
-        Swal.fire({
-            icon: "error",
-            title: "Error",
-            text: "DNI inválido",
-        });
-        return;
-    }
+    // let esDNIValido = chequeoDNI(dniPaciente.value);
+    // if (!esDNIValido) {
+    //     Swal.fire({
+    //         icon: "error",
+    //         title: "Error",
+    //         text: "DNI inválido",
+    //     });
+    //     return;
+    // }
     guardarTurno(nombrePaciente.value, dniPaciente.value, profesionalElegido.value);
     //APLICACIÓN DE SWEET ALERT
     Swal.fire({
@@ -75,11 +75,11 @@ function chequeoNombre(nombre) {
     return true;
 }
 
-// //IMPLEMENTAR VALIDACIÓN DE DNI
-// function chequeoDNI(dni) {
-//     if (!dni || isNaN(dni)) return false;
-//     return true;
-// }
+//IMPLEMENTAR VALIDACIÓN DE DNI
+function chequeoDNI(dni) {
+    if (!dni || isNaN(dni)) return false;
+    return true;
+}
 
 //APLICACIÓN DE FILTER.
 function buscarObraSocial() {
