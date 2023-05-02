@@ -99,6 +99,12 @@
         </div> 
         <form id="formularioTurnos" class="container">
             <div class="form-group">
+                <label >Obra Social:</label>
+                <input name="obraSocial" class="form-control" type="text" id="buscarObraSocial" placeholder="Ingrese el nombre de la obra social">
+                <button name="botonBuscar" class="form-control" method="submit" id="btnBuscarObraSocial">Buscar</button>
+                <p id="resultadoBusqueda"></p>
+            </div>
+            <div class="form-group">
                 <label for="nombre" >Nombre completo:</label>
                 <input type="text" id="nombre" name="nombre" required class="form-control" size="20">
             </div>
@@ -110,19 +116,11 @@
                 <label for="profesional">Seleccione un profesional:</label>
                 <select id="profesional" name="profesional" class="form-control"></select>
             </div>
-            <div class="form-group">
-                <!-- <label for="obraSocial">Seleccione su obra social:</label>
-                <select id="obraSocial" name="obraSocial" class="form-control"></select>
-            <div class="form-group"> -->
-                <label >Obra Social:</label>
-                <input id="obraSocial" name="obraSocial" class="form-control" type="text" id="buscarObraSocial" placeholder="Ingrese el nombre de la obra social">
-                <button name="botonBuscar" class="form-control" method="submit" id="btnBuscarObraSocial">Buscar</button>
-                <p id="resultadoBusqueda"></p>
-            <div class="form-group">
                 <br>
+                <div class="form-group">
                 <input type="button" id="btnFormulario" value="Solicitar Turno" class="btn btn-primary">
+                </div>
             </div>
-
             </div>
         </form>
         <script src="Solicitarturno.js"></script>

@@ -14,6 +14,7 @@ document.addEventListener(
         <div class="card-body">
         <h5 class="card-title">Turno asignado con: ${element.nombreProfesional}</h5>
             <p class="card-text">Nombre del paciente: ${element.nombre}</p>
+            <p class="card-text">DNI del paciente: ${element.dni}</p>
             <button type=button href="#" class="btn btn-primary cancelar">Cancelar turno</button>
             </div>
         </div>`;

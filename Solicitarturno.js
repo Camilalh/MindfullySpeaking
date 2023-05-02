@@ -26,7 +26,6 @@ function procesarFormulario() {
     let dniPaciente = document.getElementById("dni");
     let profesionalElegido = document.getElementById("profesional");
     let obraSocialPaciente = document.getElementById("obraSocial");
-    console.log(nombrePaciente.value, dniPaciente.value, profesionalElegido.value, obraSocialPaciente.value);
     let esNombreValido = chequeoNombre(nombrePaciente.value);
     if (!esNombreValido) {
         Swal.fire({
@@ -97,7 +96,6 @@ function buscarObraSocial() {
         resultadoBusqueda.innerHTML = "La obra social " + inputObraSocial + " no se encuentra disponible";
     }
 }
-console.log(resultado);
 
 //GUARDADO DE TURNO
 function guardarTurno(nombre, dni, profesionalElegido) {
@@ -106,7 +104,6 @@ function guardarTurno(nombre, dni, profesionalElegido) {
         nombre,
         dni,
         nombreProfesional: profesional.nombre,
-        obraSocial: profesional.obraSocial,
     };
 
     turnos = localStorage.getItem("turnos");
