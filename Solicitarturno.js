@@ -82,6 +82,9 @@ function chequeoDNI(dni) {
 }
 
 //APLICACIÓN DE FILTER.
+let botonBuscarObraSocial = document.getElementById("btnBuscarObraSocial");
+botonBuscarObraSocial.addEventListener("click", buscarObraSocial);
+
 function buscarObraSocial() {
     let inputObraSocial = document.getElementById("buscarObraSocial").value;
     let resultado = arrayDeObrasSociales.filter(function (obraSocial) {
@@ -94,6 +97,7 @@ function buscarObraSocial() {
         resultadoBusqueda.innerHTML = "La obra social " + inputObraSocial + " no se encuentra disponible";
     }
 }
+console.log(resultado);
 
 //GUARDADO DE TURNO
 function guardarTurno(nombre, dni, profesionalElegido) {
